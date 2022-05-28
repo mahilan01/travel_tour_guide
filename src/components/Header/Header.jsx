@@ -3,6 +3,7 @@ import { Autocomplete } from "@react-google-maps/api";
 import { AppBar, Toolbar, Typography, InputBase, Box } from "@material-ui/core";
 import SearchIcon from "@material-ui/icons/Search";
 import useStyles from "./styles";
+import logo from "./logo.svg";
 
 const Header = () => {
   const classes = useStyles();
@@ -16,7 +17,8 @@ const Header = () => {
     >
       <Toolbar className={classes.toolbar}>
         <Typography variant="h5" className={classes.title}>
-          Go✈Travel Advisor
+          GoTravel <img src={logo} alt="Logo" width={30} height={30} />
+          Advisor
         </Typography>
 
         <Box
