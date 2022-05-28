@@ -10,20 +10,19 @@ const Map = () => {
   const classes = useStyles();
   const isMobile = useMediaQuery("(min-width:600px)");
 
-  const coordinates = { lat: 41, lng: -71 };
+  const coordinates = { lat: 0, lng: 0 };
 
   return (
     <div className={classes.mapContainer}>
-      <h1>Map</h1>
       <GoogleMapReact
-      // bootstrapURLKeys={{ key: "AIzaSyDwYAdP0s08BJbUnt5qbq4uu8UA6IzWM40" }}
-      // defaultCenter={coordinates}
-      // center={coordinates}
-      // defaultZoom={14}
-      // margin={[50, 50, 50, 50]}
-      // options={""}
-      // onChange={""}
-      // onChildClick={""}
+        bootstrapURLKeys={{ key: "AIzaSyDh_o0UOzS9WK4r53130kkVWDqmBkWEc6s" }}
+        defaultCenter={coordinates}
+        center={coordinates}
+        defaultZoom={14}
+        margin={[50, 50, 50, 50]}
+        options={""}
+        onChange={""}
+        onChildClick={""}
       ></GoogleMapReact>
     </div>
   );
