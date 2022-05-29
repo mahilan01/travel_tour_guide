@@ -11,8 +11,8 @@ export default makeStyles(() => ({
   mapContainer: {
     height: "85vh",
     width: "100%",
-    border: "5px solid #800231",
-    backgroundColor: "#8e24aa",
+    // border: "5px solid #800231",
+    // backgroundColor: "#8e24aa",
   },
   markerContainer: {
     position: "absolute",
