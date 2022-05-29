@@ -15,7 +15,7 @@ const App = () => {
   const [places, setPlaces] = useState([]);
 
   const [coordinates, setCoordinates] = useState({});
-  const [bounds, setBounds] = useState(null);
+  const [bounds, setBounds] = useState({});
 
   // useeffect for geolocation for user
   useEffect(() => {
@@ -29,7 +29,6 @@ const App = () => {
   // for restaurants
   useEffect(() => {
     getPlacesData(bounds.sw, bounds.ne).then((data) => {
-      // console.log(data);
       setPlaces(data);
     });
   }, [coordinates, bounds]);
