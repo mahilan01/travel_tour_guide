@@ -14,7 +14,13 @@ const Header = ({ onPlaceChanged, onLoad }) => {
         <Typography variant="h5" className={classes.title}>
           {" "}
           GoTravel
-          <img src={logo} alt="Logo" width={30} height={30} />
+          <img
+            src={logo}
+            alt="Logo"
+            width={30}
+            height={30}
+            className={"logo"}
+          />
           Advisor
         </Typography>
         <Box display="flex">

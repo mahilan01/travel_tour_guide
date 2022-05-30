@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { CssBaseline, Grid } from "@material-ui/core";
-
+import "./App.css";
 import { getPlacesData, getWeatherData } from "./api/index";
 import Header from "./components/Header/Header";
 import List from "./components/List/List";
@@ -10,7 +10,7 @@ import Map from "./components/Map/Map";
 import { ThemeProvider, createMuiTheme } from "@material-ui/core/styles";
 const theme = createMuiTheme({
   typography: {
-    fontFamily: ["Cormorant", "serif"].join(","),
+    fontFamily: ["Josefin Sans", "sans-serif"].join(","),
   },
 });
 // test end
